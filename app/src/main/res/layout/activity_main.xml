@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.neuromancer.musicplayer.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonListStyle"
+                android:text="@string/now_playing_buttton" />
+
+            <Button
+                style="@style/ButtonListStyle"
+                android:text="@string/artists_button" />
+
+            <Button
+                style="@style/ButtonListStyle"
+                android:text="@string/albums_button" />
+
+            <Button
+                style="@style/ButtonListStyle"
+                android:text="@string/songs_button" />
+
+            <Button
+                style="@style/ButtonListStyle"
+                android:text="@string/settings_button" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp"
+    android:background="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Artist - Song Name" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_media_pause"
+            />
+    </LinearLayout>
+</RelativeLayout>

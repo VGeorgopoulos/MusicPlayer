@@ -8,20 +8,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button playing;
     private Button artists;
     private Button albums;
     private Button songs;
     private Button settings;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //Find the Button that shows the Playing Activity
-        playing = (Button) findViewById(R.id.playingButton);
 
         //Find the Button that shows the Artists Activity
         artists = (Button) findViewById(R.id.artistsButton);
@@ -34,18 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the Button that shows the Settings Activity
         settings = (Button) findViewById(R.id.settingsButton);
-
-        //Set a clicklistener on playing Button
-        playing.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Create a new intent to open the MainActivity(Playing)
-                Intent playingIntent = new Intent(MainActivity.this, MainActivity.class);
-
-                //Start the new activity
-                startActivity(playingIntent);
-            }
-        });
 
         //Set a clicklistener on Artists Button
         artists.setOnClickListener(new View.OnClickListener() {

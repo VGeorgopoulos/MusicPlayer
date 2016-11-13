@@ -5,4 +5,12 @@
     <string name="albums_button">Albums</string>
     <string name="songs_button">Songs</string>
     <string name="settings_button">Settings</string>
+    <string name="mainActivityTextView">The main activity is used as a Now Playing Screen. Here the user will have to all the media buttons(Previews, Next, Play and Pause. The buttons will be ImageButtons and a OnClickListener  will change the background source for the pause/play each time it is clicked (setImageResource(...);
+    \nFor all the activities the MediaCotroller class has to be used as it allows an app to interact with an ongoing media session. Media buttons and other commands ca be sent to the session.
+    \nFurthermore the MediaPlayer class has to be used to play the audio.</string>
+    <string name="artistsActivityTextView">The Artists Activity will display all the music stores in the mobile sorted by artist. At the bottom the name of the artist and the song name will be displayed and also there will be a pause/play button that will function the same way as in the Main Activity.
+    \nTo gain access to the songs stored in the device Content Providers will be used, mainly ContentResolver and Cursor.</string>
+    <string name="albumsActivityTextView">The same as Artists Activity but the data will be sorted by Album Name.</string>
+    <string name="songsActivityTextView">The same as the other two activities (Artists and Albums) but data is sorted by Song Name.</string>
+    <string name="settingsActivityTextView">Here the user will have access to the all settings that will be implemented for the app, maybe equaliser settings.</string>
 </resources>

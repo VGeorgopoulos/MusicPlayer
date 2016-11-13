@@ -8,17 +8,28 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="Music Player - Now Playing">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArtistsActivity" />
-        <activity android:name=".AlbumsActivity" />
-        <activity android:name=".SongsActivity" />
-        <activity android:name=".SettingsActivity"></activity>
+        <activity
+            android:name=".ArtistsActivity"
+            android:label="Music Player - Artists" />
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="Music Player - Albums" />
+        <activity
+            android:name=".SongsActivity"
+            android:label="Music Player - Songs" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Music Player - Settings"></activity>
     </application>
 
 </manifest>

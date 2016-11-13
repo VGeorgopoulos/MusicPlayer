@@ -18,23 +18,28 @@
 
             <Button
                 style="@style/ButtonListStyle"
-                android:text="@string/now_playing_buttton" />
+                android:text="@string/now_playing_buttton"
+                android:id="@+id/playingButton" />
 
             <Button
                 style="@style/ButtonListStyle"
-                android:text="@string/artists_button" />
+                android:text="@string/artists_button"
+                android:id="@+id/artistsButton" />
 
             <Button
                 style="@style/ButtonListStyle"
-                android:text="@string/albums_button" />
+                android:text="@string/albums_button"
+                android:id="@+id/albumsButton" />
 
             <Button
                 style="@style/ButtonListStyle"
-                android:text="@string/songs_button" />
+                android:text="@string/songs_button"
+                android:id="@+id/songsButton" />
 
             <Button
                 style="@style/ButtonListStyle"
-                android:text="@string/settings_button" />
+                android:text="@string/settings_button"
+                android:id="@+id/settingsButton" />
 
         </LinearLayout>
     </HorizontalScrollView>
